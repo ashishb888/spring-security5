@@ -1,11 +1,22 @@
-server:
-  port: 8080
-
 spring:
+  application:
+    name: spring-security-google-login
+
   security:
     oauth2:
       client:
         registration:
-          google:
+          github:
             client-id: app_id
             client-secret: app_secret
+
+server:
+  port: 8080
+#  servlet:
+#    context-path: /spring-security-google-login
+
+logging:
+  level:
+    root: info
+    poc.springboot: debug
+  file: /var/tmp/log/apps/spring-security-google-login/spring-security-google-login            
