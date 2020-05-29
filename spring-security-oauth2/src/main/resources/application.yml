@@ -1,1 +1,29 @@
+spring:
+  application:
+    name: spring-security-oauth2
 
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: e487b76b7b353542785c
+            client-secret: 3a92e8923ab3f3025ead192464aa275f053fd828
+          google:
+            client-id: 88254699945-v5g0nq6a6u2i30mrr2pepvklqtnjrsva.apps.googleusercontent.com
+            client-secret: f2KiUlWIVVqKwZ8gJiIe0xOX
+          facebook:
+            client-id: 681725602742497
+            client-secret: 8afaf0f5c643eb1e4dcc0a2de1e42865
+          
+
+server:
+  port: 8080
+#  servlet:
+#    context-path: /spring-security-oauth2
+
+logging:
+  level:
+    root: info
+    poc.springboot: debug
+  file: /var/tmp/log/apps/spring-security-oauth2/spring-security-oauth2
